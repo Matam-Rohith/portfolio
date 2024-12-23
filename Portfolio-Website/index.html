@@ -29,7 +29,10 @@
   object-fit: contain;
   margin: 6px 0;
 }
-
+.home__social-icon {
+  font-size: 30px; /* Adjust the size as needed */
+  margin: 0 11px; /* Add some spacing between icons */
+}
       @keyframes blink {
   0%, 100% {
     opacity: 1;
@@ -41,7 +44,7 @@
 
 /* Apply blink animation to the image */
 .home__blob-img {
-  animation: blink 1s infinite; /* Blink animation */
+  animation: blink 0s infinite; /* Blink animation */
 }
 
       @keyframes slideInLeft {
@@ -68,10 +71,63 @@
         animation: slideInLeft 3s ease-out;
         z-index: 1000;
       }
+     
+/* Typing animation */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Text container styling */
+/* Typing animation */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* Blinking text animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Blinking text style */
+.blinking-text {
+  animation: blink 1s infinite; /* Apply blinking effect */
+}
+
+
+/* Text container styling */
+.typing-effect {
+  display: inline-block;
+  font-family: inherit; /* Inherits the font from the parent or previous style */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides text as it's being typed */
+  font-size: 36px; /* Increase the text size */
+  color:rgb(9, 117, 206);
+  animation: typing 3s steps(30) 1s forwards; /* Typing without cursor */
+}
+
+
+
 
       /* Animating Name */
       .home__title {
-        animation: fadeIn 3s ease-out;
+        animation: fadeIn 1s ease-out;
       }
     </style>
   </head>
@@ -143,13 +199,29 @@
               >
                 <i class="uil uil-linkedin-alt home__icon"></i>
               </a>
-
+            
               <a
                 href="https://github.com/Matam-Rohith"
                 target="_blank"
                 class="home__social-icon"
               >
                 <i class="uil uil-github-alt home__icon"></i>
+              </a>
+            
+              <a
+                href="https://www.instagram.com/_.rohith_001/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-instagram home__icon"></i>
+              </a>
+            
+              <a
+                href="https://wa.me/+918500276433"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-whatsapp home__icon"></i>
               </a>
             </div>
             <div class="home__img">
@@ -186,9 +258,12 @@
               </svg>
             </div>
             <div class="home__data">
-              <h1 class="home__title">Hi, I'm MATAM ROHITH</h1>
+              <h2 class="typing-effect">Hello,I'm Matam Rohith</h2>
+
+
               <h3 class="home__subtitle">
-                Computer Science Engineering Student
+                <h3 class="blinking-text">Computer Science Student</h3>
+
               </h3>
               <p class="home__description">
                 A third-year undergraduate engineering student at
@@ -217,7 +292,8 @@
       <!--======================= About========================-->
 
       <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
+        <h2 class="section__title pulse-blink-effect" style="text-align: center;">About Me</h2>
+
         <span class="section__subtitle">My introduction</span>
 
         <div class="about__container container grid">
@@ -661,7 +737,7 @@
     
             <div>
               <h3 class="contact__title">Contact Me</h3>
-              <span class="contact__subtitle"><a href="tel:8500276433"></a>8500276433</span>
+              <span class="contact__subtitle"><a href="tel:8500276433"></a>+918500276433</span>
             </div>
           </div>
     
