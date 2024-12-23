@@ -23,6 +23,26 @@
           transform: translateY(0);
         }
       }
+      .skills__logo {
+  width: 60px;
+  height: 50px;
+  object-fit: contain;
+  margin: 6px 0;
+}
+
+      @keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Apply blink animation to the image */
+.home__blob-img {
+  animation: blink 1s infinite; /* Blink animation */
+}
 
       @keyframes slideInLeft {
         from {
@@ -159,7 +179,9 @@
                     x="-80"
                     y="-10"
                     xlink:href="assets/img/pro.png"
+                    
                   />
+              
                 </g>
               </svg>
             </div>
@@ -236,165 +258,122 @@
       </section>
 
       <!--===================== SKILLS =====================-->
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <span class="section__subtitle">My technical level</span>
 
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
+  <div class="skills__container container grid">
+    <div>
+      <!--==================== Skill 1 =================-->
+      <div class="skills__content skills__open">
+        <div class="skills__header">
+          <i class="fas fa-pencil-ruler skills__icon"></i>
 
-        <div class="skills__container container grid">
           <div>
-            <!--==================== Skill 1 =================-->
-            <div class="skills__content skills__open">
-              <div class="skills__header">
-                <i class="fas fa-pencil-ruler skills__icon"></i>
+            <h1 class="skills__title">Programming Languages</h1>
+          </div>
 
-                <div>
-                  <h1 class="skills__title">Programming Languages</h1>
-                </div>
+          <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
 
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-              
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">C</h3>
-                  </div>
-                  
-                </div>
-                
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">Java</h3>
-                    </div>
-                    
-                  </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">JavaScript</h3>
-                    </div>
-                    
-                  </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">Python</h3>
-                    </div>
-                   
-                  </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name"></h3>
-                    </div>
-                </div>
-                
-                
-              </div>
-            </div>
-
-            <!--==================== Skill 2 =================-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="fas fa-code skills__icon"></i>
-
-                <div>
-                  <h1 class="skills__title">IT Constructs</h1>
-                </div>
-
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">DBMS</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">DS & Algorithms</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">OOP</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">OS</h3>
-                  </div>
-                  
-                </div>
-                
-              </div>
+        <div class="skills__list grid">
+          <!-- C Language -->
+          <div class="skills__data">
+            <div class="skills__titles">
+              <img src="c.png" alt="C Logo" class="skills__logo">
             </div>
           </div>
 
-          <div>
-            <!--==================== Skill 3 =================-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="fas fa-swatchbook skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Technologies</h1>
-                </div>
+          <!-- Java Language -->
+          <div class="skills__data">
+            <div class="skills__titles">
+              <img src="java.png" alt="Java Logo" class="skills__logo">
+            </div>
+          </div>
 
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
+          <!-- JavaScript Language -->
+          <div class="skills__data">
+            <div class="skills__titles">
+              <img src="js.png" alt="JavaScript Logo" class="skills__logo">
+            </div>
+          </div>
 
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">MySQL</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                  </div>
-                  
-                </div>
-                
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name"></h3>
-                  </div>
-                  
-                </div>
-              </div>
+          <!-- Python Language -->
+          <div class="skills__data">
+            <div class="skills__titles">
+              <img src="python.png" alt="Python Logo" class="skills__logo">
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      <!--==================== Skill 2 =================-->
+      <div class="skills__content skills__close">
+        <div class="skills__header">
+          <i class="fas fa-code skills__icon"></i>
+
+          <div>
+            <h1 class="skills__title">IT Constructs</h1>
+          </div>
+
+          <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">DBMS</h3>
+            </div>
+            
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">DS & Algorithms</h3>
+            </div>
+            
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">OOP</h3>
+            </div>
+            
+          </div>
+          <div class="skills__data">
+            <div class="skills__titles">
+              <h3 class="skills__name">OS</h3>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <!--==================== Skill 3 =================-->
+      <div class="skills__content skills__close">
+        <div class="skills__header">
+          <i class="fas fa-swatchbook skills__icon"></i>
+          <div>
+            <h1 class="skills__title">Technologies</h1>
+          </div>
+
+          <i class="uil uil-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list grid">
+          <!-- MySQL -->
+          <div class="skills__data">
+            <div class="skills__titles">
+              <img src="sql.png" alt="MySQL Logo" class="skills__logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <!--==================== Qualifications ==================-->
 
