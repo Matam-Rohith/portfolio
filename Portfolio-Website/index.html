@@ -727,9 +727,7 @@
 
   <div class="certifications__container container">
 
-    <!-- Card -->
     <div class="cert-card">
-      <img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" />
       <div class="cert-content">
         <h3>Python Programming</h3>
         <p>Reliance Foundation</p>
@@ -741,7 +739,6 @@
     </div>
 
     <div class="cert-card">
-      <img src="assets/img/cisco-logo.png" alt="Cisco" />
       <div class="cert-content">
         <h3>Introduction to Networks</h3>
         <p>Cisco</p>
@@ -753,7 +750,6 @@
     </div>
 
     <div class="cert-card">
-      <img src="https://img.icons8.com/color/96/amazon-web-services.png" alt="AWS" />
       <div class="cert-content">
         <h3>AWS Cloud Foundations</h3>
         <p>Amazon Web Services</p>
@@ -765,7 +761,6 @@
     </div>
 
     <div class="cert-card">
-      <img src="https://img.icons8.com/color/96/microsoft.png" alt="Microsoft" />
       <div class="cert-content">
         <h3>Azure Fundamentals</h3>
         <p>Microsoft</p>
@@ -777,6 +772,58 @@
     </div>
 
   </div>
+
+  <style>
+    .certifications__container {
+      display: grid;
+      gap: 2rem;
+      padding: 2rem 0;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .cert-card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .cert-content h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .cert-content p {
+      color: #666;
+      margin: 0.2rem 0;
+    }
+
+    .cert-content small {
+      font-size: 0.8rem;
+      color: #999;
+      display: block;
+      margin: 0.4rem 0;
+    }
+
+    .cert-content a {
+      margin-top: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.85rem;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .cert-content a i {
+      margin-left: 0.4rem;
+    }
+  </style>
+</section>
+
 
   <style>
     .certifications__container {
